@@ -29,7 +29,7 @@ class ViewController: UIViewController, CNContactPickerDelegate {
         
         
     @IBAction func sayContact(_ sender: Any) {
-      var personName : String = "You have chosen "
+      var personName : String = NSLocalizedString("SELECTED", comment: "Selected Person")
         if let forename = firstNameField.text {
             personName += forename
         }
